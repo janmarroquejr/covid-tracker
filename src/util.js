@@ -18,7 +18,7 @@ const casesTypeColors = {
 };
 
 export const prettyPrintStat = (stat) =>
-  stat ? `+${numeral(stat).format("0.00a")}` : "No cases reported";
+  stat ? `+${numeral(stat).format("0.00a")}` : "+0";
 
 export const sortData = (data) => {
   const sortedData = [...data];

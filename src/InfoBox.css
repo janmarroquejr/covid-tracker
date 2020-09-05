@@ -1,7 +1,6 @@
 .infoBox {
   flex: 1;
   cursor: pointer;
-  transition: transform 200ms;
 }
 
 .infoBox--selected {
@@ -33,4 +32,21 @@
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   margin-top: 15px !important;
+}
+
+@media (max-width: 800px) {
+  .infoBox__cases,
+  .infoBox_total {
+    font-size: 20px;
+  }
+
+  .infoBox {
+    width: 150px;
+  }
+}
+
+@media (max-width: 530px) {
+  .infoBox {
+    width: 100px;
+  }
 }

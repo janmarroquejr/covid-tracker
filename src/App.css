@@ -31,10 +31,10 @@ body {
 
 .app__stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   .app {
     flex-direction: column;
   }
