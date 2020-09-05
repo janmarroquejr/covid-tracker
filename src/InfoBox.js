@@ -2,10 +2,10 @@ import React from "react";
 import { Card, CardContent, Typography } from "@material-ui/core";
 import "./InfoBox.css";
 
-function InfoBox({ title, cases, total }) {
+function InfoBox({ title, cases, total, ...props }) {
   return (
     <div className="infoBox">
-      <Card>
+      <Card onClick={props.onClick}>
         {cases !== undefined && (
           <CardContent>
             <Typography className="infoBox__title" color="textSecondary">
