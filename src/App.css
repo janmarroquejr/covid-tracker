@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #f5f6fa;
+  background-color: #d3d3d3;
 }
 
 .app {
@@ -21,7 +21,7 @@ body {
 }
 
 .app__header > h1 {
-  color: red;
+  color: #b43757;
 }
 
 .app__dropdown {
