@@ -20,6 +20,14 @@ body {
   justify-content: space-between;
 }
 
+.app__header > h1 {
+  color: red;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
 .app__left {
   flex: 0.6;
   margin-right: 20px;
@@ -32,6 +40,11 @@ body {
 .app__stats {
   display: flex;
   justify-content: space-around;
+}
+
+.app__graph--title {
+  margin: 20px 0;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 1200px) {
