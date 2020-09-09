@@ -30,7 +30,7 @@ function App() {
   const [casesType, setCasesType] = useState("cases");
 
   useEffect(() => {
-    fetch("http://disease.sh/v3/covid-19/all")
+    fetch("https://disease.sh/v3/covid-19/all")
       .then((response) => response.json())
       .then((data) => {
         setCountryInfo(data);
@@ -61,7 +61,7 @@ function App() {
 
     const url =
       countryCode === "worldwide"
-        ? "http://disease.sh/v3/covid-19/all"
+        ? "https://disease.sh/v3/covid-19/all"
         : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
 
     await fetch(url)
